@@ -1,0 +1,19 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:Arial,sans-serif; display:flex; flex-direction:column; min-height:100vh; background:white; }
+.header { background:#00FF00; height:80px; display:flex; align-items:center; }
+.logo { background:#FF8C00; padding:20px 40px; height:100%; display:flex; align-items:center; font-weight:bold; font-size:18px; }
+.main-content { flex:1; padding:30px; background:#f0f0f0; display:flex; justify-content:center; align-items:flex-start; }
+.finanzas-container { width:100%; max-width:800px; display:flex; flex-direction:column; gap:20px; }
+.total-banner { background:#222; color:#00FF00; font-size:28px; font-weight:bold; padding:20px 30px; border-radius:6px; text-align:center; letter-spacing:2px; }
+.registros-header { display:grid; grid-template-columns:1fr 1fr 1fr; background:#333; color:white; font-weight:bold; font-size:15px; padding:12px 20px; border-radius:4px; }
+.registros-lista { display:flex; flex-direction:column; gap:6px; max-height:340px; overflow-y:auto; padding-right:4px; }
+.registro-row { display:grid; grid-template-columns:1fr 1fr 1fr; padding:14px 20px; border-radius:4px; font-size:15px; font-weight:500; }
+.registro-row.entrada { background:#d4f5d4; border-left:5px solid #00BB00; }
+.registro-row.salida { background:#fde0e0; border-left:5px solid #FF0000; }
+.reg-tipo { font-weight:bold; }
+.action-buttons { display:flex; gap:20px; }
+.btn { flex:1; padding:18px; font-size:17px; font-weight:bold; border:3px solid black; cursor:pointer; transition:opacity 0.3s; }
+.btn:hover { opacity:0.8; }
+.btn-entrada { background:#00FF00; color:black; }
+.btn-salida { background:#00FFFF; color:black; }
+.footer { position:relative; border-top:2px solid black; padding:10px 20px; font-size:8px; background:white; }

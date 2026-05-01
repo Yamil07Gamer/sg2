@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas - SG²</title>
+    <link rel="stylesheet" href="finanzas.css">
+</head>
+<body>
+    <header class="header"><div class="logo">SG²</div></header>
+    <main class="main-content">
+        <div class="finanzas-container">
+            <div class="total-banner">TOTAL: <span id="total-value">$0.00</span></div>
+            <div class="registros-header">
+                <span>TIPO</span>
+                <span>MONTO</span>
+                <span>ACUMULADO</span>
+            </div>
+            <div id="registros-lista" class="registros-lista"></div>
+            <div class="action-buttons">
+                <button class="btn btn-entrada" id="btn-entrada">AGREGAR ENTRADA</button>
+                <button class="btn btn-salida" id="btn-salida">AGREGAR SALIDA</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        Courtois Productions 2026 Todos los derechos reservados.
+        <button onclick="history.back()" style="position:absolute;bottom:8px;left:12px;background:#ff0000;border:3px solid black;font-size:18px;font-weight:bold;width:40px;height:40px;cursor:pointer;">&lt;</button>
+    </footer>
+    <script src="finanzas.js"></script>
+</body>
+</html>

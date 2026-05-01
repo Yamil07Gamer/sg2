@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platillos - SG²</title>
+    <link rel="stylesheet" href="platillos.css">
+</head>
+<body>
+    <header class="header"><div class="logo">SG²</div></header>
+    <main class="main-content">
+        <div class="panel-lista">
+            <div id="platillos-grid" class="platillos-grid"></div>
+        </div>
+        <div class="panel-info" id="panel-info">
+            <div class="info-container">
+                <div class="info-header">INFORMACIÓN</div>
+                <div class="info-content">
+                    <div class="info-field"><span class="info-label">CÓDIGO:</span><span class="info-value" id="codigo-value"></span></div>
+                    <div class="info-field"><span class="info-label">NOMBRE:</span><span class="info-value" id="nombre-value"></span></div>
+                    <div class="info-field"><span class="info-label">DESCRIPCIÓN:</span><span class="info-value" id="descripcion-value"></span></div>
+                    <div class="info-field"><span class="info-label">PRECIO:</span><span class="info-value" id="precio-value"></span></div>
+                </div>
+                <div class="info-buttons">
+                    <button class="btn btn-cyan" onclick="cerrarInfo()">CERRAR</button>
+                    <button class="btn btn-green" id="btn-agregar">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        Courtois Productions 2026 Todos los derechos reservados.
+        <button onclick="history.back()" style="position:absolute;bottom:50%;transform:translateY(50%);left:12px;background:#ff0000;border:3px solid black;font-size:18px;font-weight:bold;width:40px;height:40px;cursor:pointer;">&lt;</button>
+    </footer>
+    <script src="platillos.js"></script>
+</body>
+</html>
